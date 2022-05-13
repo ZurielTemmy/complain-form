@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="sendEmail()">
+            <h3>Drop your complain</h3>
+            <input type="text"  id="name" placeholder="fullname" required>
+            <input type="email"  id="name" placeholder="email address" required>
+            <input type="number"  id="name" placeholder="phone number" required>
+            <textarea id="message"  rows="4" placeholder="enter your complain"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
